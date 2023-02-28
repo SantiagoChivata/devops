@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2023-02-27T17:01:51-0500",
+    date = "2023-02-28T12:36:14-0500",
     comments = "version: 1.3.1.Final, compiler: Eclipse JDT (IDE) 3.33.0.v20230213-1046, environment: Java 17.0.6 (Eclipse Adoptium)"
 )
 @Component
@@ -25,9 +25,9 @@ public class InvoiceResposeMapperImpl implements InvoiceResposeMapper {
 
         invoiceResponse.setInvoiceId( source.getId() );
         invoiceResponse.setCustomer( source.getCustomerId() );
-        invoiceResponse.setAmount( source.getAmount() );
-        invoiceResponse.setDetail( source.getDetail() );
         invoiceResponse.setNumber( source.getNumber() );
+        invoiceResponse.setDetail( source.getDetail() );
+        invoiceResponse.setAmount( source.getAmount() );
 
         return invoiceResponse;
     }
