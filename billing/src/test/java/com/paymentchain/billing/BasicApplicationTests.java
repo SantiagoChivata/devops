@@ -104,7 +104,7 @@ public class BasicApplicationTests {
         ).andDo(print()).andExpect(status().isOk())
                 .andDo(MockMvcResultHandlers.print())
                 .andExpect(MockMvcResultMatchers.jsonPath("$.invoiceId").value(1));        
-                String meessage = "verificando integracion con jenkins";   
+                String meessage = "verificando integracion con jenkins disparado";   
                 Assert.assertNotNull(meessage); 
     }
 }
