@@ -10,6 +10,8 @@ import com.paymentchain.billing.entities.Invoice;
 import com.paymentchain.billing.respository.InvoiceRepository;
 import java.util.Base64;
 import java.util.Optional;
+
+import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mockito;
@@ -101,7 +103,8 @@ public class BasicApplicationTests {
                 .accept(MediaType.APPLICATION_JSON)               
         ).andDo(print()).andExpect(status().isOk())
                 .andDo(MockMvcResultHandlers.print())
-                .andExpect(MockMvcResultMatchers.jsonPath("$.invoiceId").value(1));            
+                .andExpect(MockMvcResultMatchers.jsonPath("$.invoiceId").value(1));        
+                String meessage = "verificando integracion";   
+                Assert.assertNotNull(meessage); 
     }
-        String santiGenial;
 }
