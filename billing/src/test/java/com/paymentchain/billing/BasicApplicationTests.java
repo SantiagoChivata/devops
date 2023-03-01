@@ -84,7 +84,7 @@ public class BasicApplicationTests {
     }
 
     /**
-     * Test call of create method, on weblayer.
+     ****** Test call of create method, on weblayer.
      */
     @Test
     public void testFindById() throws Exception {
@@ -101,8 +101,7 @@ public class BasicApplicationTests {
                 .accept(MediaType.APPLICATION_JSON)               
         ).andDo(print()).andExpect(status().isOk())
                 .andDo(MockMvcResultHandlers.print())
-                .andExpect(MockMvcResultMatchers.jsonPath("$.invoiceId").value(1));
-                
+                .andExpect(MockMvcResultMatchers.jsonPath("$.invoiceId").value(1));            
     }
 
 }
