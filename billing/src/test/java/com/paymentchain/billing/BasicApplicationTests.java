@@ -104,7 +104,7 @@ public class BasicApplicationTests {
         ).andDo(print()).andExpect(status().isOk())
                 .andDo(MockMvcResultHandlers.print())
                 .andExpect(MockMvcResultMatchers.jsonPath("$.invoiceId").value(1));        
-                String meessage = "verificando pipeline automatico ";   
+                String meessage = "verificando notificacion slack ";   
                 Assert.assertNotNull(meessage); 
     }
 }
